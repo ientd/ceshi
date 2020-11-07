@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;/* 填充 */
+}
+body{
+    width: 100%;
+    height: 100vh;/* 和屏幕等高 */    /* min-height: 100vh; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* 以上 调整上下左右居中 */
+    background-color: #d0e7e2;
+}
+.container{/* 圆外框 */
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;/* flex元素单行或多行显示 */
+    align-items: center;
+    background: linear-gradient(-45deg, rgb(233, 247, 242) 0%,
+    rgb(178, 204, 203) 100%);/* 渐变颜色 角度 */
+    box-shadow: 10px 10px 15px rgba(165, 128, 106, 0.1),
+    -10px -10px 15px rgb(218, 243, 237);
+    /* 边缘模糊阴影 x,y,模糊半径，扩散半径 */
+    border-radius: 50% 50%;/* 外框边缘圆角 */
+    /* 外框边缘线 border: 1px solid #000; */
+}
+
+.container .box{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;/* 弯曲方向 */
+    align-items: center;
+    align-content: center;
+    width: 100px;
+    height: 140px;
+    margin: 20px;/* 元素的上下左右方向外边距 */
+}
+
+.container .box .img{/* 图片外框 */
+    width: 100px;
+    height: 100px;
+    box-shadow: 8px 8px 30px rgba(74, 131, 125, 0.1),
+    -8px -8px 30px rgb(221, 241, 241);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #96d4d6;
+    transition: box-shadow .2s ease-out;
+    /* transition 过渡切换效果 时间 transition: all 0.2s */
+    position: relative;
+}
+
+.container .box .img img{/* 图片 */
+    width: 60px;
+    transition: width 0.2s ease-out;
+}
+.container .box p{
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+}
+
+/*  按下效果 */
+.container .box .img:hover{
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.2),
+    0px 0px 0px rgba(255, 255, 255, 0.8),
+    inset 18px 18px 30px rgba(0, 0, 0, 0.1),
+    inset -18px -18px 30px rgb(215, 243, 242);
+    transition: box-shadow .2s ease-out;
+}
+.container .box .img:hover img{
+    width: 58px;
+    transition: width 0.5s ease-out;
+/*     filter: opacity(30%);
+    transition: filter .2s ease-out; */
+}
