@@ -1,1 +1,143 @@
-<h1>测试用233</h1>
+     <!DOCTYPE html>
+     <html lang="cn-ZH">
+     <head>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Document</title>
+         <style>
+             *{
+                list-style: none;
+             }
+             body{
+                 background-image: url(img/BackgroundImg.jpg);
+                 /*  background-position: center center; *//* 居中 */
+                 background-repeat: no-repeat;/* 不平铺 */
+                 background-attachment: fixed;/* 必须设置此条属性否则可能无效 */
+                 background-size: cover;/* 让背景图基于容器大小伸缩 */
+                 background-color: rgb(47, 80, 68);
+                 display: flex;
+                 justify-content: center;
+                 align-items: center;
+             }
+             /* 超链接样式 注意顺序 */
+             a:link{
+                 color: rgb(233, 248, 248);
+                 /* text-decoration:none; */
+                 font-family: Helvetica;
+                 font-size: 25pt;
+                 font-style: italic;
+                 font-weight: 900;
+             }
+             a:visited{
+                 color: rgb(224, 233, 250);
+             }
+             a:hover{
+                 color: rgb(123, 216, 210);
+                 cursor: crosshair;
+             }
+             a:active{
+                 color: rgb(76, 128, 128);
+             }
+
+             ul{
+                 display: flex;
+                 justify-content: space-around;
+                 align-items:flex-start;
+                 flex-wrap: wrap;
+             }
+             li{
+                 /* width: 10px;
+                 padding: 10px; */
+                 box-sizing: border-box;
+                 display: flex;
+                 justify-content:flex-start;
+                 align-items:flex-start;
+             }
+
+
+             .p-title{
+                 font-family: Helvetica;
+                 font-size: 25px;
+                 color: #d0e7e2 ;
+             }
+             .p-bottom{
+                 font-family: Helvetica;
+                 font-size: 15bpx;
+                 color: #d0e7e2 ;
+             }
+             .container{
+                 width: 500px;
+                 height: 500px;
+                 display: flex;
+                 justify-content: space-around;
+                 flex-wrap: wrap;
+                 align-items: center;
+             }
+             
+             .box{
+                 width: 300px;
+                 height: 50px;
+                 border-radius: 50px;
+                 border: 3px solid #d0e7e2;
+                 text-align: center; /*让div内部文字水平居中*/
+                 line-height: 0px;/* 文字高度与父元素相等 垂直居中 */
+                 margin: auto;
+                 position: absolute;
+                 top: 0;
+                 left: 0;
+                 right: 0;
+                 bottom: 0;
+             }
+             .box2{
+                 width: 600px;
+                 height: 30;
+                 position: fixed;
+                 left: 15px;
+                 top: 0px;
+             }
+             .box3{
+                 width: 150px;
+                 height: 25;
+                 position: fixed;
+                 right: 30px;
+                 bottom: 25px;
+             }
+             .box-bottom{
+                 width: 400px;
+                 height: 20;
+                 position: fixed;
+                 left: 60px;
+                 bottom: 20px;
+             }
+             img{
+                 width:40px;
+             }
+
+         </style>
+     </head>
+
+     <body>
+         <div class="container">
+             <div class="box">
+                 <p class="p-title">CESHI233</p>
+             </div>
+         </div>
+         <div class="box2">
+             <ul>
+                 <li><a href="about.html" target="blank">ABOUT</a></li>
+                 <li><a href="about;blank" target="blank">BLANK</a></li>
+                 <li><a href="linmoxinnitai/xinnitai.html" target="blank">COUZISHU</a></li>
+                 <li><a href="xinnitai.html" target="blank">ZISHU</a></li>
+             </ul>
+         </div>
+         <div class="box3">
+             <img src="img/refresh1.png" title="刷新">
+             <img src="img/plus-square1.png" title="添加">
+             <img src="img/home1.png" title="主页">
+         </div>
+         <div class="box-bottom">
+             <p class="p-bottom">◉◒◕◍◐◓◔◑◗◖◧◪◨◩</p>
+         </div>
+     </body>
+
+     </html>
