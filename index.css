@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(223, 226, 226);
+}
+
+ul {
+    position: relactive;
+    display: flex;
+    height: 200px;
+    list-style: none;
+}
+
+ul::after {
+    /* after选择器：在ul之后插入元素并设置元素格式 */
+    content: '加载中';
+    position: absolute;
+    top: 43vh;
+    left: 47%;
+    color: rgb(37, 37, 37);
+    font-size: 20px;
+    font-weight: 100;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* letter-spacing: 2em;设置字间距 */
+}
+
+li {
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+    /* 为元素添加圆角边框 */
+    margin: 0 10px;
+    /* 设置上右-下左边距 */
+}
+
+
+/* animation动画：选择器名称，持续时间，启动延迟，播放次数，alternate-reverse(正反播放) */
+
+li:nth-child(1) {
+    background-color: rgb(79, 79, 80);
+    animation: dot1 2s 0s infinite;
+}
+
+li:nth-child(2) {
+    background-color: rgb(96, 96, 97);
+    animation: dot1 2s 0.1s infinite;
+}
+
+li:nth-child(3) {
+    background-color: rgb(103, 103, 105);
+    animation: dot1 2s 0.2s infinite;
+}
+
+li:nth-child(4) {
+    background-color: rgb(112, 112, 112);
+    animation: dot1 2s 0.3s infinite;
+}
+
+li:nth-child(5) {
+    background-color: rgb(121, 121, 121);
+    animation: dot1 2s 0.4s infinite;
+}
+
+li:nth-child(6) {
+    background-color: rgb(121, 121, 124);
+    animation: dot1 2s 0.5s infinite;
+}
+
+li:nth-child(7) {
+    background-color: rgb(98, 98, 99);
+    animation: dot1 2s 0.6s infinite;
+}
+
+li:nth-child(8) {
+    background-color: rgb(92, 92, 94);
+    animation: dot1 2s 0.7s infinite;
+}
+
+li:nth-child(9) {
+    background-color: rgb(85, 85, 87);
+    animation: dot1 2s 0.8s infinite;
+}
+
+
+/* keyframs动画；时间：1%-100%或from-to；变化：top/height/transform等 */
+
+@keyframes dot1 {
+    1% {
+        transform: translateY(0);
+    }
+    35% {
+        transform: translateY(-150px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+    /* transform转换图形；translate转换；scale缩放；rotate旋转；skew倾斜转换；perspective为3D转换元素定义透视图 */
+}
